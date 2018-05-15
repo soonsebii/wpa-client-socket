@@ -1,0 +1,14 @@
+*.bak
+*.c~
+*.h~
+*.un~
+*.o
+*.d
+*.orig
+*.swp
+*.a
+*.so
+
+build/
+node_modules/
+npm-debug.log
