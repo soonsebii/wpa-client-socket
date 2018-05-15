@@ -1,0 +1,16 @@
+{
+  "name": "wpa-client-socket",
+  "version": "0.0.1",
+  "description": "WPA Client Socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "author": "",
+  "license": "MIT",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.10.0"
+  }
+}
