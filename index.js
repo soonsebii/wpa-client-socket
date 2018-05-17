@@ -5,13 +5,13 @@ var platform = os.platform();
 
 if (platform === 'linux') {
   var addon = require('./build/Release/addon.node');
-  var WpaSupplicantClientSocket = addon.WpaSupplicantClientSocket;
+  var WpaClientSocket = addon.WpaClientSocket;
 
   for (var k in events.EventEmitter.prototype) {
-    WpaSupplicantClientSocket.prototype[k] = events.EventEmitter.prototype[k];
+    WpaClientSocket.prototype[k] = events.EventEmitter.prototype[k];
   }
 
-  module.exports = WpaSupplicantClientSocket;
+  module.exports = WpaClientSocket;
 } else {
   throw new Error('Unsupported platform');
 }
