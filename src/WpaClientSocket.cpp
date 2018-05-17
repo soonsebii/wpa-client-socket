@@ -72,10 +72,9 @@ int WpaClientSocket::bind(const char *path) {
 
 int WpaClientSocket::write(const char *command, char *reply, size_t *reply_len) {
   int ret;
+
   ret = wpa_ctrl_request(this->ctrl_conn, command, strlen(command), reply, reply_len, NULL);
-  if (ret == -2) {
-    return -2;
-  } else if (ret < 0 || strncmp(reply, "FAIL", 4) == 0) {
+  if (ret < 0) {
     return -1;
   }
 
