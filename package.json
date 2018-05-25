@@ -1,14 +1,24 @@
 {
   "name": "wpa-client-socket",
   "version": "0.0.1",
-  "description": "WPA Client Socket",
+  "description": "WPA Client socket binding for Node.js",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soonsebii/wpa-client-socket.git"
+  },
+  "keywords": [ "Wifi", "WpaSupplicant", "Linux" ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "node-gyp rebuild"
   },
-  "author": "",
+  "author": "Soonsub KWON <soonsebii@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soonsebii/wpa-client-socket/issues"
+  },
+  "homepage": "https://github.com/soonsebii/wpa-client-socket",
+  "os": [ "linux" ],
   "gypfile": true,
   "dependencies": {
     "nan": "^2.10.0"
