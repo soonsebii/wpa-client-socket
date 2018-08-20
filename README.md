@@ -32,3 +32,12 @@ if (result.toString() == 'OK\n')
   console.log('write success');
 
 ```
+
+# OSS Notice
+
+## wpa_supplicant
+
+[https://w1.fi/wpa_supplicant/](https://w1.fi/wpa_supplicant/)
+Copyright (c) 2002-2016, Jouni Malinen <j@wl.fi>
+BSD License
+
