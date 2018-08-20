@@ -1,6 +1,6 @@
 {
   "name": "wpa-client-socket",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WPA Client socket binding for Node.js",
   "main": "index.js",
   "repository": {
